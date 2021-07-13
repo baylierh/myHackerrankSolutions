@@ -10,12 +10,13 @@ def fixArrayInput(ar):
         new_ar.append(int(i))
     return new_ar
 
-integer_list = input("Enter list of integers separated with spaces: ")
+# Ask for input
+integer_list = input("Enter a list of integers separated by spaces: ")
 
+# Format the list/array
 fixed_list = fixArrayInput(integer_list)
-print(fixed_list)
 
+# Change the type from a list to a tuple
 t = tuple(fixed_list)
-print(t)
 
-print(hash(t))
+print("Hash of input: ", hash(t))
