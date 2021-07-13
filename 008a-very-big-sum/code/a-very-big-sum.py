@@ -24,8 +24,8 @@ print("Separate each element with a space like so: 1000001 1000002")
 # Ask for input
 ar = input("Enter the array: ")
 
-# 'Fix' the input so simpleArraySum() can work with it
+# 'Fix' the input so aVeryBigSum() can work with it
 fixed_ar = fixArrayInput(ar)
 
-# Give the fixed array to simpleArraySum and print the result!
+# Give the fixed array to aVeryBigSum() and print the result!
 print("Sum:", aVeryBigSum(fixed_ar))
