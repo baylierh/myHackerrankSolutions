@@ -3,8 +3,9 @@
 # Hint: use the built-in round() function
 
 # Average function should take an array as input
-# and return the average of the array's elements
-# rounded to 3 places after the decimal
+#  and returns the average of the array's elements
+#  rounded to 3 places after the decimal
+# Uses sets instead of lists
 def average(arr):
     set_arr = set(arr)
     avg = sum(set_arr) / len(set_arr)
@@ -21,7 +22,6 @@ def fixArrayInput(ar):          #ar --> "1 2"
     return new_ar               #new_ar --> [1, 2]
 
 # Ask for input
-n = int(input("Enter the size of the array: "))
 inp_arr = input("Enter the values in the array separated by spaces: ")
 
 # 'Fix' the input (turn into a list)
@@ -29,4 +29,4 @@ new_arr = fixArrayInput(inp_arr)
 
 # Find the average and print it out!
 ans = average(new_arr)
-print(ans)
+print("Average: ", ans)
