@@ -23,12 +23,16 @@ ys = [i for i in range(y+1) if y >= 0]
 zs = [i for i in range(z+1) if z >= 0]
 #print(zs)
 
+# Make a list with all permutations of the x's, y's, and z's
 perm = [[i, j, k]   for i in xs
                     for j in ys
                     for k in zs]             
 #print(perm)
 
+# Now only include those in the permutation list
+#  that do not add up to n
 dont_sum_to_n = [i for i in perm 
                     if i[0] + i[1] + i[2] != n]
 
+# Print it out!
 print(dont_sum_to_n)
