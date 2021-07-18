@@ -7,7 +7,7 @@
 #
 
 def print_full_name(first, last):
-    # Write your code here
+    print("Hello ", first," ", last, "! You just delved into python.", sep='')
 
 if __name__ == '__main__':
     first_name = input()
