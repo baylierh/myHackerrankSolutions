@@ -4,4 +4,16 @@
 
 if __name__ == '__main__':
     n = int(input())
-    arr = map(int, input().split())
+    arr = list(map(int, input().split()))
+    print(arr)
+    first = 0
+    second = 0
+    for i in range(n):
+        if arr[i] > first:
+            first = arr[i]
+    for i in range(n):
+        if arr[i] < first:
+            if arr[i] > second:
+                second = arr[i]
+    print(first)
+    print(second)
