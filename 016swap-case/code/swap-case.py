@@ -14,7 +14,7 @@ def swap_case(s):
 
 if __name__ == '__main__':
     # Ask for input
-    s = input()
+    s = input("Enter a word or phrase: ")
     # Swap the cases!
     result = swap_case(s)
     # Print it out
